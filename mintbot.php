@@ -7,8 +7,8 @@ require_once('simplevk-master/autoload.php');
 
 use DigitalStar\vk_api\VK_api as vk_api; // Основной класс
 
-const VK_KEY = "d5635eb284cfcf6e4847ada87cbc6794eea4cc7bcb8d5621b0e1065e5beadc793c8e63953fce2e542a7ae";
-const ACCESS_KEY = "9936fd30";
+const VK_KEY = "-";
+const ACCESS_KEY = "-";
 const VERSION = "5.126";
 
 
@@ -792,7 +792,7 @@ if ($data->type == 'message_new') {
                 $curl = curl_init($url);
                 curl_setopt($curl, CURLOPT_URL, $url);
                 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-                curl_setopt($curl, CURLOPT_HTTPHEADER, array("Authorization: L6qR3g6Op7eIfZYkW2Ud"));
+                curl_setopt($curl, CURLOPT_HTTPHEADER, array("Authorization: -"));
                 $array = json_decode(curl_exec($curl),true);
                 curl_close($curl);
 
@@ -1068,7 +1068,7 @@ if ($data->type == 'message_new') {
             $curl = curl_init($url);
             curl_setopt($curl, CURLOPT_URL, $url);
             curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-            curl_setopt($curl, CURLOPT_HTTPHEADER, array("Authorization: L6qR3g6Op7eIfZYkW2Ud"));
+            curl_setopt($curl, CURLOPT_HTTPHEADER, array("Authorization: -"));
             $array = json_decode(curl_exec($curl),true);
             curl_close($curl);
 
@@ -1778,7 +1778,7 @@ function showLeaders($project,$server)
       $curl = curl_init($url);
       curl_setopt($curl, CURLOPT_URL, $url);
       curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-      curl_setopt($curl, CURLOPT_HTTPHEADER, array("Authorization: L6qR3g6Op7eIfZYkW2Ud"));
+      curl_setopt($curl, CURLOPT_HTTPHEADER, array("Authorization: -"));
       $array = json_decode(curl_exec($curl),true);
       curl_close($curl);
 
@@ -1856,7 +1856,7 @@ function showDeputies($project,$server)
       $curl = curl_init($url);
       curl_setopt($curl, CURLOPT_URL, $url);
       curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-      curl_setopt($curl, CURLOPT_HTTPHEADER, array("Authorization: L6qR3g6Op7eIfZYkW2Ud"));
+      curl_setopt($curl, CURLOPT_HTTPHEADER, array("Authorization: -"));
       $array = json_decode(curl_exec($curl),true);
       curl_close($curl);
 
