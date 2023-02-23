@@ -7,7 +7,7 @@ header("Access-Control-Allow-Headers: X-Requested-With, Content-Type, Authorizat
 require_once('simplevk-master/autoload.php');
 $postData = file_get_contents('php://input');
 $data = json_decode($postData, true);
-const VK_KEY = "vk1.a.dpFtylVMCSwM87pSMA-zSTy1r6IKlAqnNPi-ow0THXd8VCTN5ZuRUK4p4FAfU4dlUHZGkqXJtrg7QCdRzepzhKMkCGLrI5pOaneE0eXfHdPy-o6Z8dJJZ1NLYhgp4QoZMhNNiDJkHiW15HvSRuaKSQk3RDl6NFn51Get-o8IYSxpKzHUBocQxBIn9__qf_-X";
+const VK_KEY = "";
 const VERSION = "5.126";
 use DigitalStar\vk_api\VK_api as vk_api; // Основной класс
 $vk = vk_api::create(VK_KEY, VERSION);
