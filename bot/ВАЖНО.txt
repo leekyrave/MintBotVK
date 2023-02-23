@@ -1,0 +1,11 @@
+/*
+* by KenKup
+* vk.com/kenkup
+*/
+
+Для работы обхода нужно получить апи ключ от сервиса https://api.dotmaui.com/jsbeautify/
+Способ получения:
+1. Заходим на https://dotmaui.com/user/register.jsp и регистрируемся
+2. Переходим на https://dashboard.dotmaui.com
+3. Жмем CTRL + F и вводим Your API KEY
+4. Далее вы увидите свой апи ключ, который нужно вставить в react.php (константа PRETTY_TOKEN)
